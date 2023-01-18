@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/mystyle.css">
+  <title>چاپ عدد</title>
+</head>
+<body>
+
+  <div id="formContainer">
+	
+	  <div id="today">
+	
+	  </div>
+
+	  <div id="formWrapper">
+		<form id="form">
+			<div class="formRow">
+				
+				<input 
+				class="stretch" 
+				id="dayInput" 
+				type="number" 
+				/>
+				
+				<span class="space">
+				/
+				</span>
+				
+				<select 
+				class="stretch" 
+				id="monthInput" 
+				>
+					<option value="1">فروردین</option>
+					<option value="2">اردیبهشت</option>
+					<option value="3">خرداد</option>
+					<option value="4">تیر</option>
+					<option value="5">مرداد</option>
+					<option value="6">شهریور</option>
+					<option value="7">مهر</option>
+					<option value="8">آبان</option>
+					<option value="9">آذر</option>
+					<option value="10">دی</option>
+					<option value="11">بهمن</option>
+					<option value="12">اسفند</option>
+				</select>
+				
+				<span class="space">
+				/
+				</span>
+				
+				
+				<span id="year">
+					
+				</span>
+				
+			</div>
+			
+			<div class="formRow spaceBetween">
+			
+			
+				<section>
+					<section>
+						<label>تعداد ستون</label>
+					</section>
+					<section>
+						<div class="pageForColWrapper">
+							<div id="pageForCol" class="pageForCol">
+								
+							</div>
+						</div>
+						
+						
+						<input 
+						value="4" 
+						class="stretch" 
+						id="colsInput" 
+						type="number" 
+						/>
+					</section>
+				</section>
+				
+				
+				
+				<section>
+					<section>
+						<label>تعداد صفحات</label>
+					</section>
+					<section>
+					
+						<div id="pageForNumbers" class="pageForNumbers">
+							
+						</div>
+						
+						
+						<input 
+						value="5" 
+						class="stretch" 
+						id="pagesInput" 
+						type="number" 
+						/>
+						
+					</section>
+				</section>
+				
+	
+				
+			</div>
+			
+
+			
+			<div class="formRow">
+				<button class="button">دریافت اعداد</button>
+			</div>
+			
+			<div class="formRow numberFromTo">
+				
+				<input 
+				value="1" 
+				class="stretch" 
+				type="number" 
+				id="numberFrom"
+				/>
+				
+				<span>
+				. . . . . . . . . . . . . . . . . . . . 
+				</span>
+				
+				<span id="numberTo">
+				
+				</span>
+				
+			</div>
+			
+		</form>
+	  </div>
+  
+  </div>
+
+  
+  
+  <table id="tableBody">
+    
+  </table>
+	
+  <script src="./js/jalali-moment.browser.js"></script>
+  <script src="./js/code.js"></script>
+</body>
+</html>
